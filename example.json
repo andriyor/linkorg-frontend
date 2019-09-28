@@ -74,6 +74,21 @@
           "label": "Pizza"
         }
       ]
+    },
+    {
+      "id": 6,
+      "provider": "video",
+      "href": "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
+      "tags": [
+        {
+          "value": "chocolate",
+          "label": "Chocolate"
+        },
+        {
+          "value": "pizza",
+          "label": "Pizza"
+        }
+      ]
     }
   ],
   "tags": [
