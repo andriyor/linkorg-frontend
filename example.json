@@ -59,6 +59,21 @@
           "label": "Pizza"
         }
       ]
+    },
+    {
+      "id": 5,
+      "provider": "image",
+      "href": "https://cdn.vox-cdn.com/thumbor/cBK9AGGS3TnC7kZo3UAwV9eIkGo=/0x0:2040x1360/920x613/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65343639/acastro_180928_1777_elon_0001.0.jpg",
+      "tags": [
+        {
+          "value": "chocolate",
+          "label": "Chocolate"
+        },
+        {
+          "value": "pizza",
+          "label": "Pizza"
+        }
+      ]
     }
   ],
   "tags": [

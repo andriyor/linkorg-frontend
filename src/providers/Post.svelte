@@ -5,6 +5,7 @@
   import Reddit from "./Reddit.svelte";
   import Telegram from "./Telegram.svelte";
   import Youtube from "./Youtube.svelte";
+  import Image from "./Image.svelte";
 
   export let post = [];
   export let availableTags = [];
@@ -21,6 +22,9 @@
 {/if}
 {#if post.provider === 'youtube'}
   <Youtube href={post.href} />
+{/if}
+{#if post.provider === 'image'}
+  <Image href={post.href} />
 {/if}
 
 <Select items={availableTags} selectedValue={post.tags} isMulti="{true}" />
