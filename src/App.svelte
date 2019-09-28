@@ -5,7 +5,7 @@
 
   import Post from "./providers/Post.svelte"
 
-  let tags = [];
+  let availableTags = [];
   let posts = [];
 
   function fethPosts() {
@@ -21,11 +21,8 @@
   }
 
   onMount(() => {
-    fethPosts().then(l => {
-      posts = l;
-      console.log(posts);
-    });
-    fethTags().then(availableTags => (tags = availableTags));
+    fethPosts().then(p => posts = p);
+    fethTags().then(tags => (availableTags = tags));
   });
 </script>
 
@@ -35,9 +32,8 @@
   }
 </style>
 
-<Select items={tags} isMulti="{true}" />
+<Select items={availableTags} isMulti="{true}" />
 
 {#each posts as post}
-  <Post {post} />
+  <Post {post} {availableTags} />
 {/each}
-
