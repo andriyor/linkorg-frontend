@@ -11,29 +11,19 @@
 
   export let post = [];
   export let availableTags = [];
+
+  let providers = {
+    'twitter': Twitter,
+    'reddit': Reddit,
+    'telegram': Telegram,
+    'youtube': Youtube,
+    'image': Image,
+    'github': Github,
+    'video': Video,
+  }
+  const ComponentName = providers[post.provider];
 </script>
 
-{#if post.provider === 'twitter'}
-  <Twitter href={post.href} />
-{/if}
-{#if post.provider === 'reddit'}
-  <Reddit href={post.href} />
-{/if}
-{#if post.provider === 'telegram'}
-  <Telegram href={post.href} />
-{/if}
-{#if post.provider === 'youtube'}
-  <Youtube href={post.href} />
-{/if}
-{#if post.provider === 'image'}
-  <Image href={post.href} />
-{/if}
-{#if post.provider === 'github'}
-  <Github href={post.href} />
-{/if}
-{#if post.provider === 'video'}
-  <Video href={post.href} />
-{/if}
-
+<svelte:component  this={ComponentName} href={post.href}/>
 
 <Select items={availableTags} selectedValue={post.tags} isMulti="{true}" />
