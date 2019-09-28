@@ -8,6 +8,7 @@
   import Image from "./Image.svelte";
   import Video from "./Video.svelte";
   import Github from "./Github.svelte";
+  import Instagram from "./Instagram.svelte";
 
   export let post = [];
   export let availableTags = [];
@@ -20,6 +21,7 @@
     'image': Image,
     'github': Github,
     'video': Video,
+    'instagram': Instagram,
   }
   const ComponentName = providers[post.provider];
 </script>

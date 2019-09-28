@@ -104,6 +104,21 @@
           "label": "Pizza"
         }
       ]
+    },
+    {
+      "id": 8,
+      "provider": "instagram",
+      "href": "https://www.instagram.com/p/B26Vzsvj1iF",
+      "tags": [
+        {
+          "value": "chocolate",
+          "label": "Chocolate"
+        },
+        {
+          "value": "pizza",
+          "label": "Pizza"
+        }
+      ]
     }
   ],
   "tags": [
