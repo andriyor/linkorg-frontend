@@ -89,6 +89,21 @@
           "label": "Pizza"
         }
       ]
+    },
+    {
+      "id": 7,
+      "provider": "github",
+      "href": "https://github.com/lepture/github-cards",
+      "tags": [
+        {
+          "value": "chocolate",
+          "label": "Chocolate"
+        },
+        {
+          "value": "pizza",
+          "label": "Pizza"
+        }
+      ]
     }
   ],
   "tags": [

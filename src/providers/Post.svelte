@@ -7,6 +7,7 @@
   import Youtube from "./Youtube.svelte";
   import Image from "./Image.svelte";
   import Video from "./Video.svelte";
+  import Github from "./Github.svelte";
 
   export let post = [];
   export let availableTags = [];
@@ -26,6 +27,9 @@
 {/if}
 {#if post.provider === 'image'}
   <Image href={post.href} />
+{/if}
+{#if post.provider === 'github'}
+  <Github href={post.href} />
 {/if}
 {#if post.provider === 'video'}
   <Video href={post.href} />
