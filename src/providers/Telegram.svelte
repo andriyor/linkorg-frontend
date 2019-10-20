@@ -1,19 +1,18 @@
 <script>
   import { onMount } from "svelte";
-  export let href;
- 	let postPath = '';
+  import { beforeUpdate, afterUpdate } from "svelte";
 
-  onMount(() => {
-    postPath = new URL(href).pathname
-  });
+  export let href;
+  let postPath = "";
+
+  $: postPath = `${href}?embed=1`;
 </script>
 
-<blockquote>
-  <script
-    async
-    src="https://telegram.org/js/telegram-widget.js?7"
-    data-telegram-post={postPath}
-    data-width="100%">
-
-  </script>
-</blockquote>
+<iframe
+  id={href}
+  src={postPath}
+  width="100%"
+  height=""
+  frameborder="0"
+  scrolling="no"
+  style="border: none; overflow: hidden; min-width: 320px; height: 404px;" />

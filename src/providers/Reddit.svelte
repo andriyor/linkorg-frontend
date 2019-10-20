@@ -3,5 +3,5 @@
 </script>
 
 <blockquote class="reddit-card">
-  <a {href} />
+  <a {href}></a>
 </blockquote>

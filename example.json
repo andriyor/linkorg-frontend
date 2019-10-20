@@ -1,8 +1,10 @@
 {
-  "links": [
+  "posts": [
     {
       "id": 1,
-      "provider": "twitter",
+      "provider": {
+        "name": "twitter"
+      },        
       "href": "https://twitter.com/dan_abramov/status/1176597851822010375",
       "tags": [
         {
@@ -17,7 +19,9 @@
     },
     {
       "id": 2,
-      "provider": "reddit",
+      "provider": {
+        "name": "reddit"
+      },
       "href": "https://www.reddit.com/r/unixporn/comments/da0v70/dwm_i_like_cascadiacode_and_synthwave",
       "tags": [
         {
@@ -32,7 +36,9 @@
     },
     {
       "id": 3,
-      "provider": "telegram",
+      "provider": {
+        "name": "telegram"
+      },
       "href": "https://t.me/dvachannel/40369",
       "tags": [
         {
@@ -47,7 +53,9 @@
     },
     {
       "id": 4,
-      "provider": "youtube",
+      "provider": {
+        "name": "youtube"
+      },
       "href": "https://www.youtube.com/watch?v=4yICRafN9BE",
       "tags": [
         {
@@ -62,7 +70,9 @@
     },
     {
       "id": 5,
-      "provider": "image",
+      "provider": {
+        "name": "image"
+      },
       "href": "https://cdn.vox-cdn.com/thumbor/cBK9AGGS3TnC7kZo3UAwV9eIkGo=/0x0:2040x1360/920x613/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65343639/acastro_180928_1777_elon_0001.0.jpg",
       "tags": [
         {
@@ -77,7 +87,9 @@
     },
     {
       "id": 6,
-      "provider": "video",
+      "provider": {
+        "name": "video"
+      },
       "href": "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
       "tags": [
         {
@@ -92,7 +104,9 @@
     },
     {
       "id": 7,
-      "provider": "github",
+      "provider": {
+        "name": "github"
+      },
       "href": "https://github.com/lepture/github-cards",
       "tags": [
         {
@@ -107,7 +121,9 @@
     },
     {
       "id": 8,
-      "provider": "instagram",
+      "provider": {
+        "name": "instagram"
+      },
       "href": "https://www.instagram.com/p/B26Vzsvj1iF",
       "tags": [
         {

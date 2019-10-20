@@ -1,29 +1,21 @@
 <script>
   import { onMount } from "svelte";
+  import { onDestroy } from "svelte";
+  import { beforeUpdate, afterUpdate } from "svelte";
 
   export let href;
-
   let repoPath;
 
-  onMount(() => {
-    repoPath = new URL(href).pathname.replace("/", "");
-    console.log(repoPath);
-  });
+  $: repoPath = new URL(href).pathname.replace("/", "");
+  
 </script>
 
-
-
-{#if repoPath}
-  <div>
-    <script async src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-    <div
+<div>
+  <script async src="https://cdn.jsdelivr.net/github-cards/latest/widget.js">  </script> 
+  <div
     class="github-card"
     data-github={repoPath}
     data-width="400"
     data-height=""
     data-theme="default" />
-  </div>
-{/if}
-
-
-
+</div>

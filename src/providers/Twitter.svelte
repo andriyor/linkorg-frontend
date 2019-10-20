@@ -3,5 +3,5 @@
 </script>
 
 <blockquote class="twitter-tweet">
-  <a {href} />
+  <a {href}></a>
 </blockquote>
